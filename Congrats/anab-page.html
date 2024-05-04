@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Congradulations Anab</title>
+<style>
+  body {
+    background-color: #FFE3EC; /* Default background color for light mode */
+    color: #e75480;   /* Default text color for light mode */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Ensure images are contained within the container */
+  }
+  .mySlides img {
+    width: auto;
+    max-height: 100vh; /* Set maximum height to fit the viewport height */
+    max-width: 100%; /* Ensure images don't exceed the container width */
+  }
+</style>
+</head>
+<body>
+<h1>Congratulations Anab</h1>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="images/1.jpg" alt="Image 1">
+  </div>
+  <div class="mySlides">
+    <img src="images/2.jpg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/3.jpg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/4.jpeg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/5.jpg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/6.jpeg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/7.jpg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/after6.jpg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/8.jpeg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/9.jpeg" alt="Image 2">
+  </div>
+  <div class="mySlides">
+    <img src="images/10.jpeg" alt="Image 2">
+  </div>
+
+  <!-- Add more images as needed -->
+</div>
+<audio controls autoplay>
+  <source src="images/Fountain View Apartments 12.mp4" type="audio/mpeg">
+</audio>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
+  }
+</script>
+</body>
+</html>
+
